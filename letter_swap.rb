@@ -1,7 +1,7 @@
 def swap(str)
-  str_array = str.split
-  modified_array = str_array.each do | word |
+  modified_array = str.split.map do | word |
     word[0], word[-1] = word[-1], word[0]
+    word
   end
   modified_array.join(' ')
 end
